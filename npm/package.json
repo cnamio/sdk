@@ -1,0 +1,59 @@
+{
+  "name": "cnamio",
+  "version": "1.1.0",
+  "description": "Server SDK for Cnamio: let your users connect their own custom domain to your app (DNS provider detection, automatic or guided records, propagation checks, signed webhooks). One file, no dependencies, typed.",
+  "type": "module",
+  "main": "./cnamio.mjs",
+  "types": "./cnamio.d.mts",
+  "exports": {
+    ".": {
+      "types": "./cnamio.d.mts",
+      "default": "./cnamio.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "cnamio.mjs",
+    "cnamio.d.mts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "keywords": [
+    "custom domains",
+    "custom domain",
+    "connect domain",
+    "dns",
+    "cname",
+    "dns records",
+    "domain verification",
+    "domain connect",
+    "saas",
+    "multi-tenant",
+    "white label",
+    "webhook",
+    "cloudflare",
+    "route53",
+    "ai agents",
+    "mcp",
+    "cnamio"
+  ],
+  "homepage": "https://cnamio.com/docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cnamio/sdk.git",
+    "directory": "npm"
+  },
+  "bugs": {
+    "url": "https://github.com/cnamio/sdk/issues",
+    "email": "contato@cnamio.com"
+  },
+  "author": "Cnamio <contato@cnamio.com> (https://cnamio.com)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

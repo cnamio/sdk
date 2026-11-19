@@ -1,0 +1,25 @@
+name: publish
+# Publishes npm `cnamio` (and later PyPI `cnamio`) when a tag v<version> is pushed.
+# npm: repository secret NPM_TOKEN for the first release; then npm trusted publishing (OIDC) and the secret is removed.
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+  id-token: write
+jobs:
+  npm:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+      - name: version matches tag
+        run: test "v$(node -p "require('./npm/package.json').version")" = "${GITHUB_REF_NAME}"
+      - name: publish
+        working-directory: npm
+        run: npm publish --provenance --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

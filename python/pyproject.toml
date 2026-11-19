@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cnamio"
+version = "1.1.0"
+description = "Server SDK for Cnamio: let your users connect their own custom domain to your app (DNS provider detection, automatic or guided records, propagation checks, signed webhooks). One module, standard library only."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Cnamio", email = "contato@cnamio.com" }]
+keywords = ["custom domains", "custom domain", "connect domain", "dns", "cname", "domain verification", "saas", "multi-tenant", "webhook", "ai agents", "mcp", "cnamio"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Internet :: Name Service (DNS)",
+  "Topic :: Software Development :: Libraries",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://cnamio.com"
+Documentation = "https://cnamio.com/docs"
+Repository = "https://github.com/cnamio/sdk"
+"For AI agents" = "https://cnamio.com/agent-onboarding/SKILL.md"
+
+[tool.setuptools]
+py-modules = ["cnamio"]
