@@ -1,3 +1,5 @@
+<p align="center"><img src="https://cnamio.com/brand/cnamio-app-icon-128.png" width="96" height="96" alt="Cnamio"></p>
+
 # Cnamio SDKs
 
 Server SDKs for [Cnamio](https://cnamio.com/?utm_source=sdk-repo): let your users connect their own custom domain to your app (DNS provider detection, automatic or guided records, propagation checks, signed webhooks).
