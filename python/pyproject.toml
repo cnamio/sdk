@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cnamio"
-version = "1.1.0"
+version = "1.1.1"
 description = "Server SDK for Cnamio: let your users connect their own custom domain to your app (DNS provider detection, automatic or guided records, propagation checks, signed webhooks). One module, standard library only."
 readme = "README.md"
 requires-python = ">=3.9"

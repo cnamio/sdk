@@ -1,6 +1,6 @@
 {
   "name": "cnamio",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Server SDK for Cnamio: let your users connect their own custom domain to your app (DNS provider detection, automatic or guided records, propagation checks, signed webhooks). One file, no dependencies, typed.",
   "type": "module",
   "main": "./cnamio.mjs",
