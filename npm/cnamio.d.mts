@@ -1,4 +1,4 @@
-// Types for https://cnamio.com/sdk/cnamio.mjs (save next to it as cnamio.d.mts) (Cnamio server SDK 1.1.0).
+// Types for https://cnamio.com/sdk/cnamio.mjs (save next to it as cnamio.d.mts) (Cnamio server SDK 1.1.1).
 
 export declare const VERSION: string;
 

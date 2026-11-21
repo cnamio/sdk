@@ -3,7 +3,7 @@
 // Use it on your server only: it holds the application secret.
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
-export const VERSION = '1.1.0';
+export const VERSION = '1.1.1';
 const DEFAULT_BASE_URL = 'https://api.cnamio.com';
 /** Session tokens live 60 minutes; the client renews its own after 50. */
 const SESSION_REUSE_MS = 50 * 60_000;

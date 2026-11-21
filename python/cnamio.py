@@ -23,7 +23,7 @@ import urllib.request
 from typing import Any, Mapping, Optional, Sequence
 
 __all__ = ["Cnamio", "CnamioError", "records_for_user", "ownership_value", "verify_webhook", "VERSION"]
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 DEFAULT_BASE_URL = "https://api.cnamio.com"
 _SESSION_REUSE_SECONDS = 50 * 60  # session tokens live 60 minutes
 
