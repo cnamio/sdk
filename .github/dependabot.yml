@@ -1,0 +1,10 @@
+# Keeps the SHA-pinned GitHub Actions current: Dependabot opens a PR that moves both the SHA and the `# vX.Y.Z` comment.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
